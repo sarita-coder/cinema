@@ -37,7 +37,7 @@ input {
 .hero {
 	height: 390px;
  	background: #383838 url('../img/banner.jpg') no-repeat left top;
-  	background-size: 100% 100%;
+  	background-size: 70% 100%;
   	background-position: absolute;
   	top:60%;
   	left: 60%;
@@ -128,7 +128,7 @@ input {
 	top: 10px;
 	font-size: 12px;
 }
-.texthero button:last-child{
+.book{
 	padding : 10px 10px;
 	border-radius: 5px;
 	display: block;
@@ -161,6 +161,10 @@ input {
 }
 .fila1 {
 	background: #dfb636;
+
+}
+.photo .col-2 {
+	background: #dfb636;
 }
 .photo .col-2 img {
 	height: 180px;
@@ -168,6 +172,86 @@ input {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.fila2box {
+	font-family: sans-serif;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.fila2box h3:first-child{
+	color: #D1D1D1;
+	margin-bottom: 15px;
+}
+.fila2box h1:nth-child(2){
+	margin-bottom: 15px;
+}
+.fila2box h3:nth-child(3){
+	color: #D3D2D1;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+.btnfila2 {
+	height: 50px;
 
+}
+.btnfila2 img{
+		top: 20px;
+}
+.btnfila2 p{
+	top: 20px;
+	font-weight: normal;
+}
+.fila2box h4:last-child{
+	color:#bc7b29 ;
+	background: #F5F8FA;
+	display: inline;
+}
+.fila2box h4 span {
+	font-size: 20px;
+	background: #F5F8FA;
 
+}
+.fila2box h5 {
+
+}
+.parrafo p{
+	font-size: 0.6em;
+	color: #D1D1D1;
+	font-family: arial;
+}
+
+.fila2box hr {
+	margin: 30px 0px;
+	height: 2px;
+	background: #D4D2D1;
+	border: none;
+
+}
+.fila4 .col-3 img{
+	width: 200px;
+	height: 200px;
+	margin-bottom:20px;
+	margin-top: 20px; 
+}
+footer {
+	background: #F3F3F3;
+
+}
+.piepagina {
+	margin-top: 20px;
+	font-family: sans-serif;
+}
+.piepagina h5{
+	color: #D1D1D1;
+}
+.piepagina p{
+	font-size: 9px;
+	color: #D1D1D1;
+}
+.piepagina p:nth-child(4){
+	margin: 40px 0px;
+}
+.piepagina p {
+
+}
 
