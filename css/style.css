@@ -4,7 +4,11 @@ height: 50px;
 }
 /*rgba(0,0,0,0.3)  opaciti*/
 header{
+	width: 100%;
 	background: #f5f5f5;
+	position: fixed;
+	height: 55px;
+	z-index: 10;
 }
 .navegador   a {
 	text-decoration: none;
@@ -12,7 +16,9 @@ header{
 	font-family: arial;
 	position: absolute;
 	top: 20px;
-	color:#d0d1d1;
+}
+.navegador a:hover{
+	color: white;
 }
 .search span {
 	position: absolute;
@@ -31,40 +37,39 @@ input {
 .lupa {
 	width: 35px;
 	height: 30px;
-	background:#f5f5f5 url('../img/toolbar_find.png') no-repeat 9px center;
-	background-size: 50% 60%;
+	background: none;
 	border: none;
 	position: absolute;
 	right: 2px;
 	top:3px;
 }
-.hero {
-	height: 440px;
- 	background: #383838 url('../img/banner.jpg') no-repeat left top;
-  	background-size: 70% 120%;
-  	background-position: 0px -60px;
-  	top:60%;
-  	left: 60%;
+.fa-search{
+	color: #a8a8a8;
 }
-.heroimage .col-8 {
-	position: relative;
+.hero {
+	height: 460px;
+ 	background: #383838 url('../img/banner.jpg') no-repeat left top;
+  	background-size: 75% 100%;
+	padding-top: 60px;
 }
 .heroimage .col-8 img {
 	position: absolute;
-	left: 225px;
-	top: 180px;
+	left: 250px;
+	top: 200px;
 	height: 73px;
 	width: 73px; 
 }
 .texthero{
 	margin-top: 30px;
+	padding-left: 20px;
 	position: relative;
 	color:#d3d3d3;
-	font-family: fontAwesome;
+	font-family: sans-serif;
 }
-.texthero h1:first-child{
-	font-size: 30px;
+.texthero p:first-child{
+
 	margin-left: 5px;
+
 }
 .texthero hr {
 	font-size: 20px;
@@ -77,7 +82,7 @@ input {
 .texthero  button:nth-child(3) {
 	position: absolute;
 	top: 70px;
-	left: 0px;
+	left: 20px;
 	border-radius: 5px;
 	width: 50px;
 	height: 30px;
@@ -86,10 +91,15 @@ input {
 	color: #3bcf68;
 	font-size: 11px;
 }
+.texthero  button:hover {
+	border: 3px solid white;
+}
+
 .texthero p:nth-child(4){
 	position: relative;
 	left: 60px;
 	margin: 25px 0px 10px;
+	font-size: 13px;
 }
  .box {
  	margin: 5px 0px;
@@ -105,13 +115,12 @@ input {
 	font-weight: bold;
 	font-size: 11px;
 }
-
 .texthero p:nth-child(6){
-	font-size: 14px;
-	font-family: sans-serif;
+	font-size: 12px;
+
 	margin-top: 0px;
 }
-.texthero button:nth-child(7){
+.watch{
 	padding : 10px 10px;
 	border-radius: 5px;
 	display: block;
@@ -125,11 +134,8 @@ input {
 	height: 35px;
 	position: relative;
 }
-.watch img {
-	width: 20px;
-	height: 10px;
+.watch .fa-youtube-play {
 	margin: 2px;
-	border-radius: 2px;
 	position: absolute;
 	left: 10px;
 	top: 10px;
@@ -137,7 +143,7 @@ input {
 .watch p {
 	color: white;
 	position: absolute;
-	left: 40px;
+	left: 30px;
 	top: 10px;
 	font-size: 12px;
 }
@@ -155,28 +161,27 @@ input {
 	height: 35px;
 	position: relative;
 }
-.book img {
-	width: 25px;
-	height: 20px;
-	margin: 2px;
-	border-radius: 2px;
+.ticket i{
 	position: absolute;
-	left: 5px;
-	top: 5px;
+	left: 15px;
+	top: 10px;
 }
 .book p {
 	color: white;
 	position: absolute;
-	left: 40px;
+	left: 30px;
 	top: 10px;
 	font-size: 12px;
+}
+.normal{
+	font-weight: normal;
 }
 .movie-premier {
 	background: #e0b637;
 }
 .movie .col-2 img {
-	height: 210px;
-	width: 180px;
+	height: 200px;
+	width: 100%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -190,28 +195,25 @@ input {
 	position: relative;
 }
 .adverse-box h3:first-child{
-	color: #D1D1D1;
 	margin-bottom: 15px;
 }
 .adverse-box h1:nth-child(2){
 	margin-bottom: 15px;
 }
 .adverse-box h3:nth-child(3){
-	color: #D3D2D1;
 	margin-bottom: 15px;
 	font-weight: normal;
 }
 .btn-adv {
 	height: 60px;
-
 }
 .btn-adv:hover{
-	margin: 10px;
-	border: 3px solid #ecc12d;
+	border: 3px solid white;
 }
-.btn-adv img{
-		top: 17px;
-		left: 13px;
+.btn-adv i{
+	position: absolute;
+	top: 25px; 
+	left:15px;
 }
 .btn-adv p{
 	top: 25px;
@@ -226,12 +228,8 @@ input {
 	font-size: 20px;
 	background: #F5F8FA;
 }
-.adverse-box h5 {
-
-}
 .parrafo p{
 	font-size: 0.6em;
-	color: #D1D1D1;
 	font-family: arial;
 }
 .adverse-box hr {
@@ -253,12 +251,8 @@ footer {
 	margin-top: 20px;
 	font-family: sans-serif;
 }
-.piepagina h5{
-	color: #D1D1D1;
-}
 .piepagina p{
 	font-size: 9px;
-	color: #D1D1D1;
 }
 .piepagina p:nth-child(4){
 	margin: 40px 0px;
